@@ -8,7 +8,7 @@ function NavBar(){
         <>
           <div className="navbar-container">
           <div className="logo">
-                <h2>CAR REVIEWS+</h2>
+                <h2>CAR REVIEWS..🚗</h2>
             </div>
                 <NavLink to="/">HOME</NavLink>
                 <NavLink to="/signup">SIGN UP</NavLink>
