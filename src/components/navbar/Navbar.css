@@ -6,7 +6,7 @@
     justify-content: space-around;
     padding: 5% 1% 2% 1%; 
     margin: 10px 0px 10px 0px;
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #fff
 }
 
 .logo h2{
@@ -17,4 +17,9 @@
 .navbar-container>a {
     text-decoration: none;
     color: #ffff;
-  }
+}
+
+.navbar-container>a:hover{
+    transform: translateY(-10px);
+    transition: 0.9s ease-out;
+}
