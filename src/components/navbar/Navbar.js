@@ -7,15 +7,14 @@ function NavBar(){
     return(
         <>
           <div className="navbar-container">
-            <div className="logo">
-                <h2>CAR REVIEWS</h2>
+          <div className="logo">
+                <h2>CAR REVIEWS+</h2>
             </div>
-            <div>
                 <NavLink to="/">HOME</NavLink>
-            </div>
                 <NavLink to="/signup">SIGN UP</NavLink>
-                <NavLink to="/login">LOG IN</NavLink>                  <NavLink to='/addcar'>ADD CAR </NavLink>
-            </div>
+                <NavLink to="/login">LOG IN</NavLink>                  
+                <NavLink to='/addcar'>ADD CAR+ </NavLink>
+          </div>
         </>
     )
 }

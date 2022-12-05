@@ -12,14 +12,17 @@
 .logo h2{
     font-family: 'Elsie Swash Caps';
     font-size: large;
+    color: orange;
 }
 
 .navbar-container>a {
     text-decoration: none;
     color: #ffff;
+    font-weight: 800;
 }
 
 .navbar-container>a:hover{
     transform: translateY(-10px);
     transition: 0.9s ease-out;
+    color: orange;
 }
