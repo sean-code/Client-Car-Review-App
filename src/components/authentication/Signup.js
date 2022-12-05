@@ -1,4 +1,5 @@
 import React from "react";
+import "./Signup.css"
 
 function SignUp(){
     return(
@@ -12,5 +13,5 @@ function SignUp(){
             </form>
         </div>
     )
-
+}
 export default SignUp;
