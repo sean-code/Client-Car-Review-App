@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Inter&family=Poppins&display=swap');
 .navbar-container{
     color: #ffff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 5% 1% 2% 1%; 
-    margin: 10px 2px 10px 2px;
+    margin: 10px 0px 10px 0px;
     border-bottom: 1px solid #ccc
+}
+
+.logo h2{
+    font-family: 'Elsie Swash Caps';
+    font-size: large;
 }
 
 .navbar-container>a {
