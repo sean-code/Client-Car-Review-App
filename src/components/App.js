@@ -5,10 +5,10 @@ import NavBar from './navbar/Navbar';
 import Home from './home/Home';
 import SignUp from './authentication/Signup';
 import Login from './authentication/Login';
+import AddCar from './addcar/AddCar';
 
 function App() {
   return (
-
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -21,6 +21,7 @@ function App() {
           <Route path="/login" element={
             <Login />
           }/>
+          <Route path="/addcar" element={<AddCar />} />
         </Routes>
       </BrowserRouter>
   )
