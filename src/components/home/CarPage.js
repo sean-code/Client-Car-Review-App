@@ -8,7 +8,7 @@ function CarPage(){
         fetch("/cars")
         .then((response) => response.json())
         .then((carsArray) =>{
-            console.log(carsArray)
+            setCars(carsArray)
         })
     }, []);
 
