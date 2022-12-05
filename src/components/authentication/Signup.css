@@ -1,8 +1,36 @@
+form h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
 form {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: orange;
     width: 500px;
     margin: 0 auto;
+    padding: 0 2.5rem 2.5rem;
+    margin-top: 8%;
+    border: 5px solid orange;
 }
+
+form input {
+    margin-top: 3%;
+    background-color: rgb(251, 248, 248);
+    width: 100%;
+    padding: 4px;
+    border: none;
+  }
+
+  form button{
+    width: 20%;
+    margin: 0 auto;
+    font-weight: 800;
+    color: orange;
+    margin-top: 2%;
+    padding: 10px;
+    border: none;
+    border-radius: 200px;
+
+  }
 
