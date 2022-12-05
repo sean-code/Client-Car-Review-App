@@ -1,0 +1,12 @@
+.navbar-container{
+    background-color: #2C2626;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+
+.navbar-container>a {
+    text-decoration: none;
+  }
