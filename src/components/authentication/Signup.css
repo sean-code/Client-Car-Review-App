@@ -1,3 +1,8 @@
 form {
-    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
 }
+
