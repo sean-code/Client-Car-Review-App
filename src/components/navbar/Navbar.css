@@ -22,7 +22,7 @@
 }
 
 .navbar-container>a:hover{
-    transform: translateY(-10px);
+    transform: translateY(-3px);
     transition: 0.9s ease-out;
     color: orange;
 }

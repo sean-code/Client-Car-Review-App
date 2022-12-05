@@ -3,9 +3,14 @@ import React from "react";
 function SignUp(){
     return(
         <div>
-            <h1>Signup</h1>
+            <form>
+                <h1>Signup</h1>
+                <input type="text" id="username" />
+                <input type="password" id="username" />
+                <input type="password" id="password_confirmation" />
+                <button type="submit">Submit</button>
+            </form>
         </div>
     )
-}
 
 export default SignUp;
