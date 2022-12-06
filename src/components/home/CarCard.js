@@ -19,15 +19,31 @@ function CarCard({ car, onDeleteCar}){
     
     return(
             <li className="card">
-            <img src={image} alt={model} />
-            <h4>Make: {make}, {model}</h4>
-            <p>Price: {price}</p>
-            <p>Fuel-type: {fuel_type}</p>
-            <p>Transmission: {transmission}</p>
-            <p>Mileage: {mileage}</p>
-            <p>Engine-size: {engine_size}</p>
-            <p>Year: {year}</p>
-            <button onClick={handleDeleteClick}>Delete</button>
+                <div className="card_components">
+                    <img src={image} alt={model} />
+                    <div className="details">
+                        <p><strong>{make}, {model}</strong></p>
+                        <p>
+                            <strong>Price: </strong>US ${price}
+                        </p>
+                        <p>
+                            <strong>Fuel-Type:</strong>{fuel_type}
+                        </p>
+                        <p>
+                            <strong>Transmission:</strong>{transmission}
+                        </p>
+                        <p>
+                            <strong>Mileage:</strong>{mileage}
+                        </p>
+                        <p>
+                            <strong>Engine-Size:</strong> {engine_size}
+                        </p>
+                        <p>
+                            <strong>Year:</strong>{year}
+                        </p>
+                        <button onClick={handleDeleteClick}>Review</button>
+                    </div>
+                </div>
         </li>
     )
 
