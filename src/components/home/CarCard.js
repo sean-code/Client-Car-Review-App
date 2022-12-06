@@ -8,8 +8,8 @@ function CarCard({ car, onDeleteCar}){
     function handleDeleteClick() {
         fetch(`/cars/${id}`, {
           method: "DELETE",
-        }).then((r) => {
-          if (r.ok) {
+        }).then((response) => {
+          if (response.ok) {
             onDeleteCar(id);
           }
         });

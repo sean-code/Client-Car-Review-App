@@ -31,7 +31,7 @@ function Login({ setUser }){
                 value={username} onChange={(event) => setUsername(event.target.value)}
                 />
                 <input type="password" id="password" placeholder="Password" 
-                    value={password} onChange={(event) => setUsername(event.target.value)}
+                    value={password} onChange={(event) => setPassword(event.target.value)}
                 />
                 <button type="submit">Log in</button>
             </form>
