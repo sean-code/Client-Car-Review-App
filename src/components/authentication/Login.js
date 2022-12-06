@@ -9,7 +9,7 @@ function Login(){
             <form>
                 <h1>Login</h1>
                 <input type="text" id="username" placeholder="Username"/>
-                <input type="password" id="username" placeholder="Password" />
+                <input type="password" id="password" placeholder="Password" />
                 <button type="submit">Submit</button>
             </form>
         </div>
