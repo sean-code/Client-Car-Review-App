@@ -3,9 +3,13 @@ import "./Authentication.css";
 import {useState, useEffect} from 'react';
 
 function SignUp(){
-const [username, setUsername] = useState("");
-const [password, setPassword] = useState("");
-const [passwordConfirmation, setPasswordConfirmation] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
+    function handleSubmit(event){
+        event.preventDefault();
+    }
 
     return(
         <div>
