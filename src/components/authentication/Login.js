@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import './Authentication.css'
 
 
-function Login(){
+function Login({ setUser }){
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        fetch("/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ username, password }),
+        }).then((response) => {
+          if (response.ok) {
+            response.json().then((user) => setUser(user));
+          }
+        });
+    }
+    
     return(
         <div>
             <div>
