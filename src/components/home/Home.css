@@ -1,3 +1,5 @@
+
+/* Search Card */
 .searchbar {
     margin-top: 10%;
     padding: 1%;
@@ -15,3 +17,34 @@
     padding: 5px;
     background-color: #fff;
   }
+
+/* Car Card Component */
+
+.card{
+  margin-top: 10%;
+}
+
+li {
+    list-style: none;
+}
+
+.card img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* .details p{
+  background-color: grey;
+  width: 70%;
+} */
+
+
+
+  /* CarPage Component*/
+
+.cars_display{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  } 
