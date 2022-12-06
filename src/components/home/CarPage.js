@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import CarList from "./CarList";
 
 function CarPage(){
     const [cars, setCars] = useState([]);
@@ -12,8 +13,10 @@ function CarPage(){
         })
     }, []);
 
+
     return(
         <main>
+            <CarList />
             
 
         </main>
