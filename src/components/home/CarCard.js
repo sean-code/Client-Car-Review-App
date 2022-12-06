@@ -14,8 +14,6 @@ function CarCard({ car, onDeleteCar}){
           }
         });
       }
-
-
     
     return(
             <li className="card">
@@ -41,7 +39,7 @@ function CarCard({ car, onDeleteCar}){
                         <p>
                             <strong>Year:</strong>{year}
                         </p>
-                        <button onClick={handleDeleteClick}>Review</button>
+                        <button onClick={handleDeleteClick}> Add Review</button>
                     </div>
                 </div>
         </li>

@@ -29,10 +29,10 @@ function CarPage(){
     return(
         <main>
             <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-            <div className="cars_display">
-                {cars.map((car) => ( <CarCard key={car.id} car={car} 
-            /> ))} 
-            </div>
+                <div className="cars_display">
+                    {cars.map((car) => ( <CarCard key={car.id} car={car} 
+                /> ))} 
+                </div>
             
         </main>
     )
