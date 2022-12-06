@@ -48,55 +48,56 @@ function AddCar({ onAddCar }){
 
     return(
         <>
-            <h1>Add New Car</h1>
             <form>
+                <h1>Add New Car</h1>
                 <input 
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Make......."
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Model....."
                 />
                 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Fuel Type....."
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Transmission......"
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Mileage......."
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Engine Size.....(in CC)"
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Year of Manufacture......."
                 />
 
                 <input   
                     type="text"
                     name="name"
-                    placeholder="Car name"
+                    placeholder="Image URL......"
                 />
+                <button type="submit">Add Car</button>
             </form>
         </>
     )

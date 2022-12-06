@@ -21,7 +21,9 @@ function App() {
           <Route path="/login" element={
             <Login />
           }/>
-          <Route path="/addcar" element={<AddCar />} />
+          <Route path="/addcar" element={
+            <AddCar />
+            }/>
         </Routes>
       </BrowserRouter>
   )
