@@ -39,11 +39,11 @@ console.log(cars)
         <main>
             <Search searchTerm={searchTerm} onSearchChange={setSearchTerm} 
             />
-                {cars.map((car) => (
-            <CarCard key={car.id} car={car} 
-            />
-
-      ))}  
+            <div className="cars_display">
+                {cars.map((car) => ( <CarCard key={car.id} car={car} 
+            /> ))} 
+            </div>
+            
         </main>
     )
 }
