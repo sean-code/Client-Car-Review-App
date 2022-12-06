@@ -18,9 +18,8 @@ function CarCard({ car, onDeleteCar}){
 
     
     return(
-        <li className="card">
+            <li className="card">
             <img src={image} alt={model} />
-            <h5>{id}</h5>
             <h4>Make: {make}, {model}</h4>
             <p>Price: {price}</p>
             <p>Fuel-type: {fuel_type}</p>
