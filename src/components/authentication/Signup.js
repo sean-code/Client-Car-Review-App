@@ -1,7 +1,12 @@
 import React from "react";
-import "./Authentication.css"
+import "./Authentication.css";
+import {useState, useEffect} from 'react';
 
 function SignUp(){
+const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
     return(
         <div>
             <form>
