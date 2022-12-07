@@ -1,4 +1,6 @@
-
+h1{
+  color: #fff;
+}
 /* Search Card */
 .searchbar {
     margin-top: 10%;
@@ -22,6 +24,8 @@
 
 .card{
   margin-top: 10%;
+  border-radius: 8%;
+  
 }
 
 li {
@@ -29,22 +33,37 @@ li {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(242, 242, 242, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(242, 242, 242, 0.664);
   transition: 0.3s;
 }
 
-.details{
-  padding: 2px 16px;
-}
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 orange;
+  box-shadow: 0 8px 16px 0 rgba(255, 166, 0, 0.623);
 }
 
 .card img {
     width: 75%;
     border-radius: 20px;
     margin-left: 10%;
+}
+
+.details{
+  padding: 2px 16px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+
+.details button{
+  margin: 0 auto;
+  font-weight: 800;
+  /* color: orange; */
+  margin-top: 2%;
+  padding: 10px;
+  border: none;
+  border-radius: 200px;
+  background-color: rgba(255, 166, 0, 0.857);
+
 }
 
 

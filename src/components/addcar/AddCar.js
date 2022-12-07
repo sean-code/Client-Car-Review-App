@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import "./AddCar.css"
 
 function AddCar({ onAddCar }){
     const [make, setMake] = useState(" ");
     const [model, setModel] = useState(" ");
+    const [price, setPrice] = useState(" ");
     const [fuelType, setFuelType] = useState(" ");
     const [transmission, setTransmission] = useState(" ");
     const [mileage, setMileage] = useState(" ");
@@ -11,12 +13,12 @@ function AddCar({ onAddCar }){
     const [year, setYear] = useState(" ");
     const [image, setImage] = useState(" ");
 
-
   function handleSubmit(event) {
     event.preventDefault();
     const car = {
       make,
       model,
+      price,
       fuelType,
       transmission,
       mileage,
@@ -35,71 +37,98 @@ function AddCar({ onAddCar }){
       .then((response) => response.json())
       .then((newCar) => {
         onAddCar(newCar);
-        setMake("");
-        setModel("");
-        setFuelType("");
-        setTransmission("");
-        setMileage("");
-        setEngineSize("");
-        setYear("");
-        setImage("");
+        setMake(" ");
+        setModel(" ");
+        setPrice(" ");
+        setFuelType(" ");
+        setTransmission(" ");
+        setMileage(" ");
+        setEngineSize(" ");
+        setYear(" ");
+        setImage(" ");
       });
 }
 
     return(
         <>
-            <form onSubmit={handleSubmit}>
-                <h1>Add New Car</h1>
-                <input 
-                    type="text"
-                    name="make"
-                    placeholder="Make......."
+            <div className="new_car_form">
+                <form onSubmit={handleSubmit}>
+                    <h1>Add New Car</h1>
                     
-                />
+                    <input 
+                        type="text"
+                        id="make"
+                        placeholder="Make" 
+                        value={ make } 
+                        // onChange={(event) => setMake(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="model"
-                    placeholder="Model....."
-                />
-                
-                <input   
-                    type="text"
-                    name="fuel_type"
-                    placeholder="Fuel Type....."
-                />
+                    <input   
+                        type="text"
+                        placeholder="Model....."
+                        value={model} 
+                        onChange={(event) => setModel(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="transmission"
-                    placeholder="Transmission......"
-                />
+                    <input   
+                        type="integer"
+                        name="price"
+                        placeholder="Price....."
+                        value={price} 
+                        onChange={(event) => setPrice(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="mileage"
-                    placeholder="Mileage......."
-                />
+                    
+                    <input   
+                        type="text"
+                        name="fuel_type"
+                        placeholder="Fuel Type....."
+                        value={fuelType} 
+                        onChange={(event) => setFuelType(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="engine_size"
-                    placeholder="Engine Size.....(in CC)"
-                />
+                    <input   
+                        type="text"
+                        name="transmission"
+                        placeholder="Transmission......"
+                        value={transmission}
+                        onChange={(event) => setTransmission(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="year_of_manufacture"
-                    placeholder="Year of Manufacture......."
-                />
+                    <input   
+                        type="integer"
+                        name="mileage"
+                        placeholder="Mileage......."
+                        value={mileage}
+                        onChange={(event) => setMileage(event.target.value)}
+                    />
 
-                <input   
-                    type="text"
-                    name="image"
-                    placeholder="Image URL......"
-                />
-                <button type="submit">Add Car</button>
-            </form>
+                    <input   
+                        type="integer"
+                        name="engine_size"
+                        placeholder="Engine Size.....(in CC)"
+                        value={engineSize}
+                        onChange={(event) => setEngineSize(event.target.value)}
+                    />
+
+                    <input   
+                        type="text"
+                        name="year_of_manufacture"
+                        placeholder="Year of Manufacture......."
+                        value={year}
+                        onChange={(event) => setYear(event.target.value)}
+                    />
+
+                    <input   
+                        type="text"
+                        name="image"
+                        placeholder="Image URL......"
+                        value={image}
+                        onChange={(event) => setImage(event.target.value)}
+                    />
+                    <button type="submit">Add Car</button>
+                </form>
+            </div>
         </>
     )
 }
