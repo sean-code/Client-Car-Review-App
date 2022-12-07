@@ -13,10 +13,13 @@ function Login({ setUser }){
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ username, password }),
+            body: JSON.stringify({ 
+                username, 
+                password 
+            }),
         }).then((response) => {
-          if (response.ok) {
-            response.json().then((user) => setPassword(user));
+          if(response.ok) {
+            response.json().then((user) => setUser(user));
           }
         });
     }
@@ -24,18 +27,25 @@ function Login({ setUser }){
     return(
         <div>
             <div>
-            <form onSubmit={handleSubmit}>
-                <h1>Login</h1>
-                <input 
-                type="text" id="username" placeholder="Username"
-                value={username} onChange={(event) => setUsername(event.target.value)}
-                />
-                <input type="password" id="password" placeholder="Password" 
-                    value={password} onChange={(event) => setPassword(event.target.value)}
-                />
-                <button type="submit">Log in</button>
-            </form>
-        </div>
+                <form onSubmit={handleSubmit}>
+                    <h1>Login</h1>
+                    <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Username"
+                    value={username} 
+                    onChange={(event) => setUsername(event.target.value)}
+                    />
+                    <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="Password" 
+                    value={password} 
+                    onChange={(event) => setPassword(event.target.value)}
+                    />
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
 
         </div>
     )
