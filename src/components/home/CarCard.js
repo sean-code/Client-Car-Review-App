@@ -2,18 +2,18 @@ import React from "react";
 import "./Home.css"
 
 function CarCard({ car, onDeleteCar}){
-    const { id, price, make, model, fuel_type, transmission, mileage, engine_size, year, image } = car;
+    const { price, make, model, fuel_type, transmission, mileage, engine_size, year, image } = car;
 
 
-    function handleDeleteClick() {
-        fetch(`/cars/${id}`, {
-          method: "DELETE",
-        }).then((response) => {
-          if (response.ok) {
-            onDeleteCar(id);
-          }
-        });
-      }
+    // function handleDeleteClick() {
+    //     fetch(`/cars/${id}`, {
+    //       method: "DELETE",
+    //     }).then((response) => {
+    //       if (response.ok) {
+    //         onDeleteCar(id);
+    //       }
+    //     });
+    //   }
     
     return(
             <li className="card">
@@ -39,7 +39,7 @@ function CarCard({ car, onDeleteCar}){
                         <p>
                             <strong>Year:</strong>{year}
                         </p>
-                        <button onClick={handleDeleteClick}> Add Review</button>
+                        {/* <button onClick={handleDeleteClick}> Add Review</button> */}
                     </div>
                 </div>
         </li>
