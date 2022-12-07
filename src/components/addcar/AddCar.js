@@ -60,7 +60,7 @@ function AddCar({ onAddCar }){
                         id="make"
                         placeholder="Make" 
                         value={ make } 
-                        // onChange={(event) => setMake(event.target.value)}
+                        onChange={(event) => setMake(event.target.value)}
                     />
 
                     <input   

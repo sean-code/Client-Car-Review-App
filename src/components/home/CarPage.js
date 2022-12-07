@@ -6,7 +6,7 @@ import CarCard from "./CarCard"
 
 function CarPage(){
     const [cars, setCars] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerm, setSearchTerm] = useState(" ");
 
     useEffect(() => {
         fetch('/cars')
@@ -25,6 +25,11 @@ function CarPage(){
     //   const displayedCars = cars.filter((car) => {
     //     return car.name.toLowerCase().includes(searchTerm.toLowerCase());
     //   });
+
+
+    
+
+
 
     return(
         <main>

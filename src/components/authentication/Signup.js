@@ -9,7 +9,7 @@ function SignUp({ setUser }){
 
     function handleSubmit(event){
         event.preventDefault();
-        fetch("/signup",{
+        fetch(`/users`,{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
