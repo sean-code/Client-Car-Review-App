@@ -1,5 +1,5 @@
 {
-  "homepage": "http://sean-code.github.io/",
+  "homepage": "http://sean-code.github.io/Client-Car-Review-App",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +17,8 @@
   },
   "scripts": {
     "start": "PORT=4000 react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
