@@ -22,7 +22,7 @@ function App() {
 
   if (!user) 
   return <Login onLogin={setUser} />
-
+          
   return (
       <BrowserRouter>
         <NavBar/>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Authentication.css";
-import {useState} from 'react';
+import { useState } from 'react';
 
 function SignUp({ setUser }){
     const [username, setUsername] = useState("");
@@ -54,6 +54,7 @@ function SignUp({ setUser }){
                 onChange={(event) => setPasswordConfirmation(event.target.value)}
                 />
                 <button type="submit">Sign Up</button>
+                {/* <button>Log In</button> */}
             </form>
         </div>
     )

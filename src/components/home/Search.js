@@ -1,8 +1,10 @@
 import "./Home.css"
 
 function Search({ searchTerm, onSearchChange }) {
+  
     return (
       <div className="searchbar">
+        <label htmlFor="search">Search 🚗:</label>
         <input
           type="text"
           id="search"
