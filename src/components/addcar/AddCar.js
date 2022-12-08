@@ -50,11 +50,10 @@ function AddCar({ onAddCar }){
 }
 
     return(
-        <>
             <div className="new_car_form">
                 <form onSubmit={handleSubmit}>
                     <h1>Add New Car</h1>
-                    
+
                     <input 
                         type="text"
                         id="make"
@@ -62,13 +61,14 @@ function AddCar({ onAddCar }){
                         value={ make } 
                         onChange={(event) => setMake(event.target.value)}
                     />
-
+                    <label htmlFor="search">Make:</label>
                     <input   
                         type="text"
                         placeholder="Model....."
                         value={model} 
                         onChange={(event) => setModel(event.target.value)}
                     />
+                    <label htmlFor="search">Model:</label>
 
                     <input   
                         type="integer"
@@ -77,6 +77,7 @@ function AddCar({ onAddCar }){
                         value={price} 
                         onChange={(event) => setPrice(event.target.value)}
                     />
+                    <label htmlFor="search">Price:</label>
 
                     
                     <input   
@@ -86,6 +87,7 @@ function AddCar({ onAddCar }){
                         value={fuelType} 
                         onChange={(event) => setFuelType(event.target.value)}
                     />
+                    <label htmlFor="search">Fuel-type:</label>
 
                     <input   
                         type="text"
@@ -94,6 +96,7 @@ function AddCar({ onAddCar }){
                         value={transmission}
                         onChange={(event) => setTransmission(event.target.value)}
                     />
+                    <label htmlFor="search">Transmission:</label>
 
                     <input   
                         type="integer"
@@ -102,6 +105,7 @@ function AddCar({ onAddCar }){
                         value={mileage}
                         onChange={(event) => setMileage(event.target.value)}
                     />
+                    <label htmlFor="search">Mileage:</label>
 
                     <input   
                         type="integer"
@@ -110,6 +114,7 @@ function AddCar({ onAddCar }){
                         value={engineSize}
                         onChange={(event) => setEngineSize(event.target.value)}
                     />
+                    <label htmlFor="search">Engine Size:</label>
 
                     <input   
                         type="text"
@@ -118,6 +123,7 @@ function AddCar({ onAddCar }){
                         value={year}
                         onChange={(event) => setYear(event.target.value)}
                     />
+                    <label htmlFor="search">Year of Manufacture:</label>
 
                     <input   
                         type="text"
@@ -126,10 +132,10 @@ function AddCar({ onAddCar }){
                         value={image}
                         onChange={(event) => setImage(event.target.value)}
                     />
+                    <label htmlFor="search">Image URL</label>
                     <button type="submit">Add Car</button>
                 </form>
             </div>
-        </>
     )
 }
 
