@@ -1,8 +1,12 @@
 # Car Review App - (Front-end)
 
-An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system.
+An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system. 
+
+## Developer
+- [John Nganga](https://github.com/sean-code)
 
 ## Front-end
+- [Deployed here](https://sean-code.github.io/Client-Car-Review-App/)
 
 - Sign into a specific user
 
