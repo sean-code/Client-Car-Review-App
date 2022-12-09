@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Car Review App - (Front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An application where users can view car ratings,average market price, used car inventory, market car reviews, search for a car and add a new car in the system.
 
-## Available Scripts
+## Front-end
 
-In the project directory, you can run:
+- Sign into a specific user
 
-### `npm start`
+- View cars on log in
+- Search for cars
+- Create new cars
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Designed the User Interface with custom CSS and Javascript to create a modern, smooth UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Default log in credentials
+    ```json
+    {
+    "username": "Bob",
+    "password": "123"
+    }
+    ```
 
-### `npm test`
+## Back-end
+- Utilized Ruby on Rails to rapidly develop and deploy application using MVC framework
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Integrated Ruby on Rails’ ActiveRecord to perform database operations in an object-oriented fashion and represent associations between models
 
-### `npm run build`
+- [Rails-Back-End](https://github.com/sean-code/Car-Review)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Set-up Instructions
+- Clone this repository to your local environment (machine):
+    * - ` git clone git@github.com:sean-code/Car-Review.git` -- for SSH link.
+    * - Or `git clone https://github.com/sean-code/Car-Review.git` -- for the HTTPS link
+- Then run:
+    * `bundle install`
+    * `rails db:migrate db:seed`
 
-### `npm run eject`
+- Then run:
+    * `rails s` \
+    ...to launch the server locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Technology Used
+* Rect Js
+* CSS
+* Bootstrap
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
+MIT License\
+ⒸCar Review App 2022
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Permission is therefore granted, free of charge to anyone obtaining a duplicate
+of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, merge, publish, distribute and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Code Splitting
+THE SOFTWARE IS PROVIDED "AS IT IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. UNDER NO EVENT SHALL THE
+AUTHOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGE OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT OR IN RELATION TO THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### ENJOY YOURSELF AND HAPPY CODING!!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
