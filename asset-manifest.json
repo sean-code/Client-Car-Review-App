@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Client-Car-Review-App/static/css/main.a9df43fa.css",
-    "main.js": "/Client-Car-Review-App/static/js/main.269d4aab.js",
+    "main.js": "/Client-Car-Review-App/static/js/main.76c7d309.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Client-Car-Review-App/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/Client-Car-Review-App/index.html",
     "main.a9df43fa.css.map": "/Client-Car-Review-App/static/css/main.a9df43fa.css.map",
-    "main.269d4aab.js.map": "/Client-Car-Review-App/static/js/main.269d4aab.js.map",
+    "main.76c7d309.js.map": "/Client-Car-Review-App/static/js/main.76c7d309.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Client-Car-Review-App/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9df43fa.css",
-    "static/js/main.269d4aab.js"
+    "static/js/main.76c7d309.js"
   ]
 }
