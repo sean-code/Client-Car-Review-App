@@ -14,10 +14,12 @@ An application where users can view car ratings,average market price, used car i
 
 ## Default log in credentials
     ```json
+    
     {
     "username": "Bob",
     "password": "123"
     }
+
     ```
 
 ## Back-end
@@ -29,25 +31,32 @@ An application where users can view car ratings,average market price, used car i
 
 
 
-## API Set-up Instructions
-- Clone this repository to your local environment (machine):
-    * - ` git clone git@github.com:sean-code/Car-Review.git` -- for SSH link.
-    * - Or `git clone https://github.com/sean-code/Car-Review.git` -- for the HTTPS link
-- Then run:
-    * `bundle install`
-    * `rails db:migrate db:seed`
 
-- Then run:
-    * `rails s` \
-    ...to launch the server locally
+## App Appearance
 
+- Figma Design can be accessed by [clicking here](https://www.figma.com/file/pbzn9BXFalsa65DOpFVzWz/Untitled?node-id=1%3A46&t=mf4AeZMJJB6a5pQs-1)
 
-##
+* Sign up
+- ![Sign Up](img/Signup.png)
+
+* Log in
+- ![Login](img/Login.png)
+
+* Navbar
+- ![Navbar](img/NavBar.png)
+
+* Landing page
+- ![Landing](img/Landpage.png)
+
+* Create New Car
+- ![AddCar](img/AddCar.png)
+
 
 
 
 ## Technology Used
-* Rect Js
+* Figma design
+* React Js
 * CSS
 * Bootstrap
 
@@ -64,7 +73,7 @@ AUTHOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGE OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT OR IN RELATION TO THE SOFTWARE.
 
 
-### ENJOY YOURSELF AND HAPPY CODING!!
+### HAPPY CODING!!
 
 
 
