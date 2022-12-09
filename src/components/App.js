@@ -20,7 +20,7 @@ function App() {
     });
   }, []);
 
-  if (!user) 
+  if (user) 
   return <Login onLogin={setUser} />
           
   return (
