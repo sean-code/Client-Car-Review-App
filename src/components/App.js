@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './navbar/Navbar';
 import Home from './home/Home';
 import SignUp from './authentication/Signup';
@@ -24,7 +24,7 @@ function App() {
   return <Login onLogin={setUser} />
           
   return (
-      <BrowserRouter>
+      <Router>
         <NavBar/>
         <Routes>
           <Route path="/" element={
@@ -40,7 +40,7 @@ function App() {
             <AddCar />
             }/>
         </Routes>
-      </BrowserRouter>
+      </Router>
   )
 }
 

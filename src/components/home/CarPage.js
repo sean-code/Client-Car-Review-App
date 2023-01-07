@@ -14,7 +14,7 @@ function CarPage(){
             .then(response => setCars(response));
 },[]);
 
-// console.log(cars)
+console.log(cars)
 
 
     return(
